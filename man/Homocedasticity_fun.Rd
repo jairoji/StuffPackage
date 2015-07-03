@@ -18,7 +18,8 @@ Levene
 }
 \examples{
 x = rnorm(1000)
-Homocedasticity_fun()
+group = rep(c("a", "b", "c", "d", "e"), 200)
+Homocedasticity_fun(x, group)
 }
 \keyword{Homocedasticity}
 

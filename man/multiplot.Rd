@@ -9,7 +9,9 @@ multiplot(..., plotlist = NULL, file, cols = 1, layout = NULL)
 \arguments{
 \item{...}{ggplot objects}
 
-\item{cols:}{Number of columns in layout, layout: A matrix specifying the layout. If present, 'cols' is ignored.}
+\item{cols:}{Number of columns in layout}
+
+\item{layout:}{A matrix specifying the layout. If present, 'cols' is ignored.}
 }
 \description{
 ggplot objects can be passed in ..., or to plotlist (as a list of ggplot objects)

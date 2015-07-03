@@ -10,7 +10,8 @@
 #' @export
 #' @examples
 #' x = rnorm(1000)
-#' Homocedasticity_fun()
+#' group = rep(c("a", "b", "c", "d", "e"), 200)
+#' Homocedasticity_fun(x, group)
 
 Homocedasticity_fun = function(x, y){
   Pruebas.Homocedasticidad = matrix(c(bartlett.test(x, y)$p.value,
