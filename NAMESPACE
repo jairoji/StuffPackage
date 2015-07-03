@@ -3,6 +3,7 @@
 export(Homocedasticity_fun)
 export(Important_measures)
 export(Normality_fun)
+export(Rules_prunning)
 export(multiplot)
 import(arules)
 import(ggplot2)
