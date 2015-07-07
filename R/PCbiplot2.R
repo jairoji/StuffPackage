@@ -5,8 +5,9 @@
 #' @param X A FactoMineR PCA object 
 #' @param x Dimension of the PCA object for the x axis
 #' @param y Dimension of the PCA object for the y axis
-#' @param size.obs.text Observation's text size
-#' @import ggplot2, FactoMineR
+#' @param size.obs.text Text size for the labels
+#' @import ggplot2
+#' @import FactoMineR
 #' @keywords ggplot, PCA, FactoMineR
 #' @export
 #' @examples http://stackoverflow.com/questions/22381560/how-to-create-a-biplot-with-factominer
@@ -14,7 +15,6 @@
 #' PCbiplot2()
 
 PCbiplot2 <- function(X, x="Dim.1", y="Dim.2", size.obs.text = 3) {
-  if(!require(ggplot2)) install.packages("ggplot2")
   # X being a PCA object
   data <- data.frame(obsnames=row.names(X$ind$coord), X$ind$coord)
   plot <- ggplot(data, aes_string(x=x, y=y)) + geom_text(alpha=.4, size=size.obs.text,     aes(label=obsnames))

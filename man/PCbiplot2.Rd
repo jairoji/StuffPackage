@@ -13,7 +13,7 @@ PCbiplot2(X, x = "Dim.1", y = "Dim.2", size.obs.text = 3)
 
 \item{y}{Dimension of the PCA object for the y axis}
 
-\item{size.obs.text}{Observation's text size}
+\item{size.obs.text}{Text size for the labels}
 }
 \description{
 Plots biplot of a FactoMineR PCA object
